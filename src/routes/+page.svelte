@@ -36,7 +36,7 @@
 					</div>
 				</div>
 				<p class="text-2xl mb-8 text-neon-blue font-light tracking-wide">
-					Next generation software for the AV industry
+					Virtual solutions, extreme performance
 				</p>
 				<p class="text-lg mb-12 max-w-2xl mx-auto opacity-80">
 					Powered by SvelteKit, Tailwind CSS, and Three.js
@@ -110,7 +110,7 @@
 					</div>
 				</div>
 				<p class="text-xl mb-6 text-neon-blue font-light">
-					Next generation software for the AV industry
+					Virtual solutions, extreme performance
 				</p>
 				<p class="text-base mb-10 opacity-80">
 					Powered by SvelteKit, Tailwind & Three.js
