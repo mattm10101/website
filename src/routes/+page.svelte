@@ -30,8 +30,8 @@
 							</svg>
 						</div>
 
-						<h1 class="text-7xl font-bold tracking-wider logo-text relative z-10">
-							<span class="gradient-text">VIRTUΛL</span><span class="text-neon-teal">-</span><span class="gradient-text-av">ΛV</span>
+						<h1 class="text-7xl font-black tracking-wide logo-text relative z-10" style="font-weight: 900;">
+							<span class="gradient-text">VIRTUΛL</span><span class="text-neon-teal -mx-1">-</span><span class="gradient-text-av">ΛV</span>
 						</h1>
 					</div>
 				</div>
@@ -104,8 +104,8 @@
 							</svg>
 						</div>
 
-						<h1 class="text-5xl font-bold tracking-wider logo-text relative z-10">
-							<span class="gradient-text">VIRTUΛL</span><span class="text-neon-teal">-</span><span class="gradient-text-av">ΛV</span>
+						<h1 class="text-5xl font-black tracking-wide logo-text relative z-10" style="font-weight: 900;">
+							<span class="gradient-text">VIRTUΛL</span><span class="text-neon-teal -mx-1">-</span><span class="gradient-text-av">ΛV</span>
 						</h1>
 					</div>
 				</div>
@@ -198,8 +198,10 @@
 	}
 
 	.logo-text {
-		letter-spacing: 0.08em;
+		letter-spacing: 0.05em;
 		filter: drop-shadow(0 0 20px rgba(20, 255, 236, 0.6)) drop-shadow(0 0 40px rgba(168, 85, 247, 0.4));
+		font-family: 'Share Tech Mono', 'Arial Black', 'Impact', monospace;
+		text-transform: uppercase;
 	}
 
 	/* Gradient text for VIRTUAL */
