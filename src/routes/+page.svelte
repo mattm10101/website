@@ -30,8 +30,8 @@
 							</svg>
 						</div>
 
-						<h1 class="text-7xl font-black tracking-wide logo-text relative z-10" style="font-weight: 900;">
-							<span class="gradient-text">VIRTUΛL</span><span class="text-neon-teal -mx-1">-</span><span class="gradient-text-av">ΛV</span>
+						<h1 class="text-7xl tracking-wide logo-text relative z-10" style="font-weight: 700;">
+							<span class="gradient-text">VIRTUΛL</span><span class="text-neon-teal -mx-1 hyphen">-</span><span class="gradient-text-av">ΛV</span>
 						</h1>
 					</div>
 				</div>
@@ -104,8 +104,8 @@
 							</svg>
 						</div>
 
-						<h1 class="text-5xl font-black tracking-wide logo-text relative z-10" style="font-weight: 900;">
-							<span class="gradient-text">VIRTUΛL</span><span class="text-neon-teal -mx-1">-</span><span class="gradient-text-av">ΛV</span>
+						<h1 class="text-5xl tracking-wide logo-text relative z-10" style="font-weight: 700;">
+							<span class="gradient-text">VIRTUΛL</span><span class="text-neon-teal -mx-1 hyphen">-</span><span class="gradient-text-av">ΛV</span>
 						</h1>
 					</div>
 				</div>
@@ -202,7 +202,12 @@
 		filter: drop-shadow(0 0 20px rgba(20, 255, 236, 0.6)) drop-shadow(0 0 40px rgba(168, 85, 247, 0.4));
 		font-family: 'Exo 2', 'Arial Black', sans-serif;
 		text-transform: uppercase;
-		font-weight: 900;
+		font-weight: 700;
+	}
+
+	.hyphen {
+		position: relative;
+		top: -0.15em;
 	}
 
 	/* Gradient text for VIRTUAL */
