@@ -21,8 +21,10 @@
 
 html,
 body {
-	@apply bg-lab-metal text-neon-teal font-sci h-full w-full overflow-hidden;
+	@apply bg-lab-metal text-neon-teal font-sci;
 	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 body.no-select * {

@@ -5,17 +5,17 @@
 
 <!-- Desktop Layout (16:9 / 16:10) -->
 <div class="hidden desktop:block min-h-screen bg-lab-metal text-neon-teal">
-	<div class="relative w-full h-screen overflow-hidden">
+	<div class="relative w-full min-h-screen">
 		<!-- Background Grid -->
 		<BackgroundGrid />
 
-		<!-- Three.js Background -->
-		<div class="absolute inset-0 z-0">
+		<!-- Three.js Background - Fixed Position -->
+		<div class="fixed inset-0 z-0">
 			<ThreeScene />
 		</div>
 
 		<!-- Content Overlay -->
-		<div class="relative z-10 h-full flex items-center justify-center">
+		<div class="relative z-10 min-h-screen flex items-center justify-center">
 			<div class="text-center fade-in px-8">
 				<!-- Logo with border frame -->
 				<div class="inline-block mb-8">
@@ -167,17 +167,17 @@
 
 <!-- Mobile Layout (Portrait) -->
 <div class="desktop:hidden min-h-screen bg-lab-metal text-neon-teal">
-	<div class="relative w-full h-screen overflow-hidden">
+	<div class="relative w-full min-h-screen">
 		<!-- Background Grid -->
 		<BackgroundGrid />
 
-		<!-- Three.js Background -->
-		<div class="absolute inset-0 z-0">
+		<!-- Three.js Background - Fixed Position -->
+		<div class="fixed inset-0 z-0">
 			<ThreeScene />
 		</div>
 
 		<!-- Content Overlay -->
-		<div class="relative z-10 h-full flex flex-col items-center justify-center px-6">
+		<div class="relative z-10 min-h-screen flex flex-col items-center justify-center px-6">
 			<div class="text-center fade-in">
 				<!-- Logo with border frame -->
 				<div class="inline-block mb-8">
