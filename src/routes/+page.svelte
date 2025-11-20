@@ -48,7 +48,7 @@
 						Get Started
 					</button>
 					<button class="btn btn-secondary">
-						Learn More
+						Sign up for beta access
 					</button>
 				</div>
 
@@ -122,7 +122,7 @@
 						Get Started
 					</button>
 					<button class="btn btn-secondary w-full">
-						Learn More
+						Sign up for beta access
 					</button>
 				</div>
 
