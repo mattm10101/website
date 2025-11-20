@@ -17,9 +17,21 @@
 		<!-- Content Overlay -->
 		<div class="relative z-10 h-full flex items-center justify-center">
 			<div class="text-center fade-in px-8">
-				<h1 class="text-6xl font-bold mb-6 glow-effect tracking-tighter" style="text-shadow: 0 0 20px rgba(20,255,236,0.5); letter-spacing: -0.02em;">
-					VIRTUAL<span class="text-neon-purple ml-1">AV</span>
-				</h1>
+				<!-- Logo with border frame -->
+				<div class="inline-block mb-8">
+					<div class="logo-frame p-6 border-2 border-neon-teal rounded-lg relative">
+						<!-- Waveform accent -->
+						<div class="absolute top-2 right-2 opacity-30">
+							<svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 8 L4 4 L8 12 L12 2 L16 10 L20 6 L24 14 L28 4 L32 8" stroke="currentColor" stroke-width="2" class="text-neon-purple"/>
+							</svg>
+						</div>
+
+						<h1 class="text-7xl font-bold tracking-wider logo-text">
+							<span class="gradient-text">VIRTUAL</span><span class="gradient-text-av">AV</span>
+						</h1>
+					</div>
+				</div>
 				<p class="text-2xl mb-8 text-neon-blue font-light tracking-wide">
 					Next-Generation Creative Platform
 				</p>
@@ -76,9 +88,21 @@
 		<!-- Content Overlay -->
 		<div class="relative z-10 h-full flex flex-col items-center justify-center px-6">
 			<div class="text-center fade-in">
-				<h1 class="text-4xl font-bold mb-6 glow-effect tracking-tighter" style="text-shadow: 0 0 20px rgba(20,255,236,0.5); letter-spacing: -0.02em;">
-					VIRTUAL<span class="text-neon-purple ml-1">AV</span>
-				</h1>
+				<!-- Logo with border frame -->
+				<div class="inline-block mb-8">
+					<div class="logo-frame p-4 border-2 border-neon-teal rounded-lg relative">
+						<!-- Waveform accent -->
+						<div class="absolute top-1 right-1 opacity-30">
+							<svg width="24" height="12" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 8 L4 4 L8 12 L12 2 L16 10 L20 6 L24 14 L28 4 L32 8" stroke="currentColor" stroke-width="2" class="text-neon-purple"/>
+							</svg>
+						</div>
+
+						<h1 class="text-5xl font-bold tracking-wider logo-text">
+							<span class="gradient-text">VIRTUAL</span><span class="gradient-text-av">AV</span>
+						</h1>
+					</div>
+				</div>
 				<p class="text-xl mb-6 text-neon-blue font-light">
 					Next-Generation Creative Platform
 				</p>
@@ -124,5 +148,58 @@
 	kbd {
 		font-family: 'Share Tech Mono', monospace;
 		font-size: 0.875rem;
+	}
+
+	/* Logo Frame */
+	.logo-frame {
+		background: linear-gradient(135deg, rgba(20, 255, 236, 0.05) 0%, rgba(168, 85, 247, 0.05) 100%);
+		box-shadow: 0 0 30px rgba(20, 255, 236, 0.3), inset 0 0 20px rgba(20, 255, 236, 0.05);
+		transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+
+	.logo-frame:hover {
+		box-shadow: 0 0 40px rgba(20, 255, 236, 0.5), inset 0 0 30px rgba(20, 255, 236, 0.1);
+		transform: translateY(-2px);
+	}
+
+	.logo-text {
+		letter-spacing: 0.1em;
+		filter: drop-shadow(0 0 20px rgba(20, 255, 236, 0.6)) drop-shadow(0 0 40px rgba(168, 85, 247, 0.4));
+	}
+
+	/* Gradient text for VIRTUAL */
+	.gradient-text {
+		background: linear-gradient(90deg, #14ffec 0%, #00d0ff 50%, #a855f7 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: gradient-shift 3s ease infinite;
+		background-size: 200% auto;
+	}
+
+	/* Gradient text for AV with more emphasis */
+	.gradient-text-av {
+		background: linear-gradient(90deg, #a855f7 0%, #ec4899 50%, #00d0ff 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: gradient-shift 3s ease infinite;
+		background-size: 200% auto;
+		margin-left: 0.15em;
+		font-weight: 900;
+		transform: scale(1.05);
+		display: inline-block;
+	}
+
+	@keyframes gradient-shift {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
 	}
 </style>
