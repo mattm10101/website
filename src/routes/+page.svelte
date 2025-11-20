@@ -52,21 +52,6 @@
 					</button>
 				</div>
 
-				<!-- Feature Cards -->
-				<div class="grid grid-cols-3 gap-6 mt-16 max-w-4xl mx-auto">
-					<div class="card slide-up" style="animation-delay: 0.1s;">
-						<h3 class="text-xl font-bold mb-2 text-neon-teal">Fast</h3>
-						<p class="text-sm opacity-70">Lightning-fast performance with optimized rendering</p>
-					</div>
-					<div class="card slide-up" style="animation-delay: 0.2s;">
-						<h3 class="text-xl font-bold mb-2 text-neon-blue">Modern</h3>
-						<p class="text-sm opacity-70">Built with cutting-edge web technologies</p>
-					</div>
-					<div class="card slide-up" style="animation-delay: 0.3s;">
-						<h3 class="text-xl font-bold mb-2 text-neon-purple">Beautiful</h3>
-						<p class="text-sm opacity-70">Stunning neon aesthetics and smooth animations</p>
-					</div>
-				</div>
 			</div>
 		</div>
 
@@ -74,6 +59,109 @@
 		<div class="absolute bottom-8 right-8 z-10 text-right opacity-60">
 			<p class="text-sm">Press <kbd class="px-2 py-1 bg-lab-panel rounded border border-neon-teal">Ctrl+G</kbd> to toggle grid</p>
 		</div>
+	</div>
+
+	<!-- Product Showcase Sections -->
+	<div class="relative z-10 bg-lab-metal">
+		<!-- VirtualMix -->
+		<section class="product-section py-20 px-8">
+			<div class="max-w-7xl mx-auto">
+				<div class="grid grid-cols-2 gap-16 items-center">
+					<div class="fade-in">
+						<h2 class="text-5xl font-bold mb-4 text-neon-teal">VirtualMix</h2>
+						<p class="text-xl text-gray-300 mb-6">Professional video switching and mixing software that replaces expensive hardware mixers with powerful virtual solutions.</p>
+						<a href="/virtualmix" class="inline-block text-neon-blue hover:text-neon-teal transition-colors text-lg">
+							Learn more →
+						</a>
+					</div>
+					<div class="product-image-placeholder">
+						<div class="aspect-video bg-lab-panel rounded-lg border border-gray-700 flex items-center justify-center">
+							<span class="text-gray-500 text-lg">VirtualMix Screenshot</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Extreme Control -->
+		<section class="product-section py-20 px-8 bg-gradient-to-b from-lab-metal to-lab-header">
+			<div class="max-w-7xl mx-auto">
+				<div class="grid grid-cols-2 gap-16 items-center">
+					<div class="product-image-placeholder order-1">
+						<div class="aspect-video bg-lab-panel rounded-lg border border-gray-700 flex items-center justify-center">
+							<span class="text-gray-500 text-lg">Extreme Control Screenshot</span>
+						</div>
+					</div>
+					<div class="fade-in order-2">
+						<h2 class="text-5xl font-bold mb-4 text-neon-purple">Extreme Control</h2>
+						<p class="text-xl text-gray-300 mb-6">Advanced control surface software for precision mixing and production workflows.</p>
+						<a href="/extreme-control" class="inline-block text-neon-blue hover:text-neon-purple transition-colors text-lg">
+							Learn more →
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- VirtualAudio -->
+		<section class="product-section py-20 px-8">
+			<div class="max-w-7xl mx-auto">
+				<div class="grid grid-cols-2 gap-16 items-center">
+					<div class="fade-in">
+						<h2 class="text-5xl font-bold mb-4 text-neon-blue">VirtualAudio</h2>
+						<p class="text-xl text-gray-300 mb-6">Professional audio routing and processing with zero-latency performance.</p>
+						<a href="/virtualaudio" class="inline-block text-neon-blue hover:text-neon-teal transition-colors text-lg">
+							Learn more →
+						</a>
+					</div>
+					<div class="product-image-placeholder">
+						<div class="aspect-video bg-lab-panel rounded-lg border border-gray-700 flex items-center justify-center">
+							<span class="text-gray-500 text-lg">VirtualAudio Screenshot</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- EZ 3D -->
+		<section class="product-section py-20 px-8 bg-gradient-to-b from-lab-metal to-lab-header">
+			<div class="max-w-7xl mx-auto">
+				<div class="grid grid-cols-2 gap-16 items-center">
+					<div class="product-image-placeholder order-1">
+						<div class="aspect-video bg-lab-panel rounded-lg border border-gray-700 flex items-center justify-center">
+							<span class="text-gray-500 text-lg">EZ 3D Screenshot</span>
+						</div>
+					</div>
+					<div class="fade-in order-2">
+						<h2 class="text-5xl font-bold mb-4 text-neon-pink">EZ 3D</h2>
+						<p class="text-xl text-gray-300 mb-6">Simple yet powerful 3D graphics and virtual set creation for live productions.</p>
+						<a href="/ez-3d" class="inline-block text-neon-blue hover:text-neon-pink transition-colors text-lg">
+							Learn more →
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- StreamForge -->
+		<section class="product-section py-20 px-8 mb-20">
+			<div class="max-w-7xl mx-auto">
+				<div class="grid grid-cols-2 gap-16 items-center">
+					<div class="fade-in">
+						<h2 class="text-5xl font-bold mb-4 gradient-text-streamforge">StreamForge</h2>
+						<p class="text-xl text-gray-300 mb-6">Complete streaming and recording solution with advanced encoding and multi-platform support.</p>
+						<a href="/streamforge" class="inline-block text-neon-blue hover:text-neon-teal transition-colors text-lg">
+							Learn more →
+						</a>
+					</div>
+					<div class="product-image-placeholder">
+						<div class="aspect-video bg-lab-panel rounded-lg border border-gray-700 flex items-center justify-center">
+							<span class="text-gray-500 text-lg">StreamForge Screenshot</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 </div>
 
@@ -126,20 +214,13 @@
 					</button>
 				</div>
 
-				<!-- Feature Cards -->
-				<div class="flex flex-col gap-4 max-w-xs mx-auto">
-					<div class="card slide-up" style="animation-delay: 0.1s;">
-						<h3 class="text-lg font-bold mb-1 text-neon-teal">Fast</h3>
-						<p class="text-xs opacity-70">Lightning-fast performance</p>
-					</div>
-					<div class="card slide-up" style="animation-delay: 0.2s;">
-						<h3 class="text-lg font-bold mb-1 text-neon-blue">Modern</h3>
-						<p class="text-xs opacity-70">Cutting-edge technologies</p>
-					</div>
-					<div class="card slide-up" style="animation-delay: 0.3s;">
-						<h3 class="text-lg font-bold mb-1 text-neon-purple">Beautiful</h3>
-						<p class="text-xs opacity-70">Stunning neon aesthetics</p>
-					</div>
+				<!-- Products List -->
+				<div class="flex flex-col gap-3 max-w-xs mx-auto">
+					<a href="/virtualmix" class="text-neon-teal hover:text-neon-blue transition-colors text-lg">VirtualMix →</a>
+					<a href="/extreme-control" class="text-neon-purple hover:text-neon-pink transition-colors text-lg">Extreme Control →</a>
+					<a href="/virtualaudio" class="text-neon-blue hover:text-neon-teal transition-colors text-lg">VirtualAudio →</a>
+					<a href="/ez-3d" class="text-neon-pink hover:text-neon-purple transition-colors text-lg">EZ 3D →</a>
+					<a href="/streamforge" class="text-neon-teal hover:text-neon-blue transition-colors text-lg">StreamForge →</a>
 				</div>
 			</div>
 		</div>
@@ -154,6 +235,27 @@
 	kbd {
 		font-family: 'Share Tech Mono', monospace;
 		font-size: 0.875rem;
+	}
+
+	/* StreamForge gradient */
+	.gradient-text-streamforge {
+		background: linear-gradient(90deg, #14ffec 0%, #a855f7 50%, #ec4899 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	/* Product sections */
+	.product-section {
+		transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+
+	.product-image-placeholder {
+		transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+
+	.product-section:hover .product-image-placeholder {
+		transform: scale(1.02);
 	}
 
 	/* Logo Frame */
