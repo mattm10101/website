@@ -19,16 +19,19 @@
 			<div class="text-center fade-in px-8">
 				<!-- Logo with border frame -->
 				<div class="inline-block mb-8">
-					<div class="logo-frame p-6 border-2 border-neon-teal rounded-lg relative">
+					<div class="logo-frame p-6 border-2 border-neon-teal rounded-xl relative overflow-hidden">
+						<!-- Scan lines effect -->
+						<div class="scan-lines"></div>
+
 						<!-- Waveform accent -->
-						<div class="absolute top-2 right-2 opacity-30">
+						<div class="absolute top-2 right-2 opacity-30 z-10">
 							<svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M0 8 L4 4 L8 12 L12 2 L16 10 L20 6 L24 14 L28 4 L32 8" stroke="currentColor" stroke-width="2" class="text-neon-purple"/>
 							</svg>
 						</div>
 
-						<h1 class="text-7xl font-bold tracking-wider logo-text">
-							<span class="gradient-text">VIRTUAL</span><span class="gradient-text-av">AV</span>
+						<h1 class="text-7xl font-bold tracking-wider logo-text relative z-10">
+							<span class="gradient-text">VIRTUΛL</span><span class="gradient-text-av">ΛV</span>
 						</h1>
 					</div>
 				</div>
@@ -90,16 +93,19 @@
 			<div class="text-center fade-in">
 				<!-- Logo with border frame -->
 				<div class="inline-block mb-8">
-					<div class="logo-frame p-4 border-2 border-neon-teal rounded-lg relative">
+					<div class="logo-frame p-4 border-2 border-neon-teal rounded-xl relative overflow-hidden">
+						<!-- Scan lines effect -->
+						<div class="scan-lines"></div>
+
 						<!-- Waveform accent -->
-						<div class="absolute top-1 right-1 opacity-30">
+						<div class="absolute top-1 right-1 opacity-30 z-10">
 							<svg width="24" height="12" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M0 8 L4 4 L8 12 L12 2 L16 10 L20 6 L24 14 L28 4 L32 8" stroke="currentColor" stroke-width="2" class="text-neon-purple"/>
 							</svg>
 						</div>
 
-						<h1 class="text-5xl font-bold tracking-wider logo-text">
-							<span class="gradient-text">VIRTUAL</span><span class="gradient-text-av">AV</span>
+						<h1 class="text-5xl font-bold tracking-wider logo-text relative z-10">
+							<span class="gradient-text">VIRTUΛL</span><span class="gradient-text-av">ΛV</span>
 						</h1>
 					</div>
 				</div>
@@ -155,6 +161,7 @@
 		background: linear-gradient(135deg, rgba(20, 255, 236, 0.05) 0%, rgba(168, 85, 247, 0.05) 100%);
 		box-shadow: 0 0 30px rgba(20, 255, 236, 0.3), inset 0 0 20px rgba(20, 255, 236, 0.05);
 		transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+		border-radius: 0.75rem;
 	}
 
 	.logo-frame:hover {
@@ -162,33 +169,62 @@
 		transform: translateY(-2px);
 	}
 
+	/* Scan lines effect */
+	.scan-lines {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: repeating-linear-gradient(
+			0deg,
+			transparent,
+			transparent 2px,
+			rgba(20, 255, 236, 0.03) 2px,
+			rgba(20, 255, 236, 0.03) 4px
+		);
+		pointer-events: none;
+		z-index: 1;
+		animation: scan-animation 8s linear infinite;
+	}
+
+	@keyframes scan-animation {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(4px);
+		}
+	}
+
 	.logo-text {
-		letter-spacing: 0.1em;
+		letter-spacing: 0.08em;
 		filter: drop-shadow(0 0 20px rgba(20, 255, 236, 0.6)) drop-shadow(0 0 40px rgba(168, 85, 247, 0.4));
 	}
 
 	/* Gradient text for VIRTUAL */
 	.gradient-text {
-		background: linear-gradient(90deg, #14ffec 0%, #00d0ff 50%, #a855f7 100%);
+		background: linear-gradient(135deg, #14ffec 0%, #00d0ff 40%, #a855f7 70%, #ec4899 100%);
 		-webkit-background-clip: text;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
-		animation: gradient-shift 3s ease infinite;
+		animation: gradient-shift 4s ease infinite;
 		background-size: 200% auto;
 	}
 
 	/* Gradient text for AV with more emphasis */
 	.gradient-text-av {
-		background: linear-gradient(90deg, #a855f7 0%, #ec4899 50%, #00d0ff 100%);
+		background: linear-gradient(135deg, #a855f7 0%, #ec4899 40%, #00d0ff 100%);
 		-webkit-background-clip: text;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
-		animation: gradient-shift 3s ease infinite;
+		animation: gradient-shift 4s ease infinite;
 		background-size: 200% auto;
-		margin-left: 0.15em;
+		margin-left: 0.1em;
 		font-weight: 900;
 		transform: scale(1.05);
 		display: inline-block;
+		letter-spacing: 0.05em;
 	}
 
 	@keyframes gradient-shift {
