@@ -198,10 +198,11 @@
 	}
 
 	.logo-text {
-		letter-spacing: 0.12em;
+		letter-spacing: 0.1em;
 		filter: drop-shadow(0 0 20px rgba(20, 255, 236, 0.6)) drop-shadow(0 0 40px rgba(168, 85, 247, 0.4));
-		font-family: 'Bebas Neue', 'Arial Black', sans-serif;
+		font-family: 'Exo 2', 'Arial Black', sans-serif;
 		text-transform: uppercase;
+		font-weight: 900;
 	}
 
 	/* Gradient text for VIRTUAL */
