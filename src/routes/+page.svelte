@@ -198,9 +198,9 @@
 	}
 
 	.logo-text {
-		letter-spacing: 0.05em;
+		letter-spacing: 0.06em;
 		filter: drop-shadow(0 0 20px rgba(20, 255, 236, 0.6)) drop-shadow(0 0 40px rgba(168, 85, 247, 0.4));
-		font-family: 'Share Tech Mono', 'Arial Black', 'Impact', monospace;
+		font-family: 'Orbitron', 'Share Tech Mono', 'Arial Black', sans-serif;
 		text-transform: uppercase;
 	}
 
