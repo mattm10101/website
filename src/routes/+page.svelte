@@ -31,7 +31,7 @@
 						</div>
 
 						<h1 class="text-7xl font-bold tracking-wider logo-text relative z-10">
-							<span class="gradient-text">VIRTUΛL</span><span class="gradient-text-av">ΛV</span>
+							<span class="gradient-text">V|RTUΛ|</span><span class="gradient-text-av">ΛV</span>
 						</h1>
 					</div>
 				</div>
@@ -105,7 +105,7 @@
 						</div>
 
 						<h1 class="text-5xl font-bold tracking-wider logo-text relative z-10">
-							<span class="gradient-text">VIRTUΛL</span><span class="gradient-text-av">ΛV</span>
+							<span class="gradient-text">V|RTUΛ|</span><span class="gradient-text-av">ΛV</span>
 						</h1>
 					</div>
 				</div>
