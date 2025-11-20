@@ -2,12 +2,185 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+	--color-metal: #1f1f23;
+	--color-panel: #2a2a2e;
+	--color-accent: #14ffec;
+	--color-accent-blue: #00d0ff;
+	--color-header: #151518;
+	--grid-size: 40px;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+html,
 body {
-	overflow-x: hidden;
+	@apply bg-lab-metal text-neon-teal font-sci h-full w-full overflow-hidden;
+	position: relative;
+}
+
+body.no-select * {
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #1f1f23;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #4a4a4e;
+	border-radius: 5px;
+	transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #5a5a5e;
+}
+
+/* Background Grid */
+.background-grid {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: repeating-linear-gradient(
+			0deg,
+			transparent,
+			transparent calc(var(--grid-size) - 1px),
+			rgba(20, 255, 236, 0.08) calc(var(--grid-size) - 1px),
+			rgba(20, 255, 236, 0.08) var(--grid-size)
+		),
+		repeating-linear-gradient(
+			90deg,
+			transparent,
+			transparent calc(var(--grid-size) - 1px),
+			rgba(20, 255, 236, 0.08) calc(var(--grid-size) - 1px),
+			rgba(20, 255, 236, 0.08) var(--grid-size)
+		);
+	pointer-events: none;
+	z-index: 1;
+	opacity: 0.5;
+}
+
+/* Button Styles */
+@layer components {
+	.btn {
+		@apply px-6 py-3 rounded-lg font-bold cursor-pointer transition-all duration-200 border border-transparent;
+		background-color: #4a4a4e;
+		color: #eee;
+	}
+
+	.btn:hover {
+		@apply transform scale-105;
+		background-color: #5a5a5e;
+	}
+
+	.btn:active {
+		@apply transform scale-95;
+	}
+
+	.btn-primary {
+		@apply bg-neon-teal text-lab-metal shadow-glow;
+	}
+
+	.btn-primary:hover {
+		@apply bg-neon-blue;
+		box-shadow: 0 0 12px rgba(20, 255, 236, 0.8), 0 0 24px rgba(0, 208, 255, 0.6);
+	}
+
+	.btn-secondary {
+		@apply bg-neon-purple text-white shadow-glow-purple;
+	}
+
+	.btn-secondary:hover {
+		@apply bg-neon-pink shadow-glow-pink;
+	}
+
+	/* Panel Styles */
+	.panel {
+		@apply bg-lab-panel border border-gray-700 rounded-lg shadow-panel;
+		transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+
+	.panel:hover {
+		@apply border-neon-teal shadow-glow;
+	}
+
+	/* Card Styles */
+	.card {
+		@apply bg-lab-panel p-6 rounded-lg border border-gray-700;
+		transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+
+	.card:hover {
+		@apply border-neon-teal transform translate-y-[-4px];
+		box-shadow: 0 8px 20px rgba(20, 255, 236, 0.3);
+	}
+
+	/* Input Styles */
+	.input {
+		@apply bg-lab-metal border border-gray-700 text-neon-teal rounded-md px-4 py-2;
+		transition: all 0.2s ease;
+	}
+
+	.input:focus {
+		@apply outline-none border-neon-teal shadow-glow;
+	}
+}
+
+/* Smooth Animations */
+.fade-in {
+	animation: fadeIn 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.slide-up {
+	animation: slideUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+/* Glow Effect */
+.glow-effect {
+	animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+	from {
+		box-shadow: 0 0 8px rgba(20, 255, 236, 0.6), 0 0 16px rgba(0, 208, 255, 0.4);
+	}
+	to {
+		box-shadow: 0 0 12px rgba(20, 255, 236, 0.8), 0 0 24px rgba(0, 208, 255, 0.6);
+	}
 }
