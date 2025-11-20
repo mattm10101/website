@@ -39,7 +39,7 @@
 					Virtual solutions, extreme performance
 				</p>
 				<p class="text-lg mb-12 max-w-2xl mx-auto opacity-80">
-					Powered by SvelteKit, Tailwind CSS, and Three.js
+					All products in open beta
 				</p>
 
 				<!-- Action Buttons -->
@@ -113,7 +113,7 @@
 					Virtual solutions, extreme performance
 				</p>
 				<p class="text-base mb-10 opacity-80">
-					Powered by SvelteKit, Tailwind & Three.js
+					All products in open beta
 				</p>
 
 				<!-- Action Buttons -->
