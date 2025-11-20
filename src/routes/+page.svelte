@@ -17,8 +17,8 @@
 		<!-- Content Overlay -->
 		<div class="relative z-10 h-full flex items-center justify-center">
 			<div class="text-center fade-in px-8">
-				<h1 class="text-7xl font-bold mb-6 glow-effect" style="text-shadow: 0 0 20px rgba(20,255,236,0.5);">
-					VIRTUAL <span class="text-neon-purple">AV</span>
+				<h1 class="text-6xl font-bold mb-6 glow-effect tracking-tighter" style="text-shadow: 0 0 20px rgba(20,255,236,0.5); letter-spacing: -0.02em;">
+					VIRTUAL<span class="text-neon-purple ml-1">AV</span>
 				</h1>
 				<p class="text-2xl mb-8 text-neon-blue font-light tracking-wide">
 					Next-Generation Creative Platform
@@ -76,8 +76,8 @@
 		<!-- Content Overlay -->
 		<div class="relative z-10 h-full flex flex-col items-center justify-center px-6">
 			<div class="text-center fade-in">
-				<h1 class="text-5xl font-bold mb-6 glow-effect" style="text-shadow: 0 0 20px rgba(20,255,236,0.5);">
-					VIRTUAL <span class="text-neon-purple">AV</span>
+				<h1 class="text-4xl font-bold mb-6 glow-effect tracking-tighter" style="text-shadow: 0 0 20px rgba(20,255,236,0.5); letter-spacing: -0.02em;">
+					VIRTUAL<span class="text-neon-purple ml-1">AV</span>
 				</h1>
 				<p class="text-xl mb-6 text-neon-blue font-light">
 					Next-Generation Creative Platform
